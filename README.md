@@ -2,7 +2,7 @@
 
 Bienvenido al repositorio oficial del proyecto **Gestión de Mapas - Aiquipa**, una solución tecnológica robusta y elegante diseñada para la administración, publicación y visualización de recursos cartográficos. Este sistema permite gestionar eficientemente una galería de mapas, facilitando su integración y consumo a través de servicios web modernos.
 
-![Logo del Proyecto](src/main/resources/static/img/logo.png)
+![Logo del Proyecto](src/main/resources/static/img/mvc.png)
 
 ---
 
