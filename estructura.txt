@@ -1,0 +1,253 @@
+Listado de rutas de carpetas para el volumen SYSTEM
+El n£mero de serie del volumen es D68D-48E2
+C:.
+|   .classpath
+|   .gitattributes
+|   .gitignore
+|   .project
+|   estructura.txt
+|   HELP.md
+|   mvnw
+|   mvnw.cmd
+|   pom.xml
+|   
++---.mvn
+|   \---wrapper
+|           maven-wrapper.properties
+|           
++---.settings
+|       org.eclipse.core.resources.prefs
+|       org.eclipse.jdt.apt.core.prefs
+|       org.eclipse.jdt.core.prefs
+|       org.eclipse.m2e.core.prefs
+|       org.eclipse.wst.common.component
+|       org.eclipse.wst.common.project.facet.core.xml
+|       org.eclipse.wst.validation.prefs
+|       org.springframework.ide.eclipse.prefs
+|       
++---.vscode
+|       settings.json
+|       
++---src
+|   +---main
+|   |   +---java
+|   |   |   \---pe
+|   |   |       \---gob
+|   |   |           \---sencico
+|   |   |               \---gestion_mapa_aiquipa
+|   |   |                   |   GestionMapaAiquipaApplication.java
+|   |   |                   |   ServletInitializer.java
+|   |   |                   |   
+|   |   |                   +---controller
+|   |   |                   |       GestionmapaController.java
+|   |   |                   |       
+|   |   |                   +---converter
+|   |   |                   |   |   GestionmapaConverter.java
+|   |   |                   |   |   
+|   |   |                   |   \---impl
+|   |   |                   |           GestionmapaConverterImpl.java
+|   |   |                   |           
+|   |   |                   +---entity
+|   |   |                   |       Gestionmapa.java
+|   |   |                   |       
+|   |   |                   +---model
+|   |   |                   |       FormatImage.java
+|   |   |                   |       GestionmapaModel.java
+|   |   |                   |       
+|   |   |                   +---repository
+|   |   |                   |       GestionmapaRepository.java
+|   |   |                   |       
+|   |   |                   \---service
+|   |   |                       |   GestionmapaService.java
+|   |   |                       |   
+|   |   |                       \---impl
+|   |   |                               GestionmapaServiceImpl.java
+|   |   |                               
+|   |   +---resources
+|   |   |   |   application.properties
+|   |   |   |   
+|   |   |   +---static
+|   |   |   |   \---img
+|   |   |   |           logo.png
+|   |   |   |           
+|   |   |   \---templates
+|   |   |           mapas.html
+|   |   |           mapForm.html
+|   |   |           mapQuery.html
+|   |   |           viewmap.html
+|   |   |           
+|   |   \---webapp
+|   \---test
+|       \---java
+|           \---pe
+|               \---gob
+|                   \---sencico
+|                       \---gestion_mapa_aiquipa
+|                               GestionMapaAiquipaApplicationTests.java
+|                               
+\---target
+    +---classes
+    |   |   application.properties
+    |   |   
+    |   +---pe
+    |   |   \---gob
+    |   |       \---sencico
+    |   |           \---gestion_mapa_aiquipa
+    |   |               |   GestionMapaAiquipaApplication.class
+    |   |               |   ServletInitializer.class
+    |   |               |   
+    |   |               +---controller
+    |   |               |       GestionmapaController.class
+    |   |               |       
+    |   |               +---converter
+    |   |               |   |   GestionmapaConverter.class
+    |   |               |   |   
+    |   |               |   \---impl
+    |   |               |           GestionmapaConverterImpl.class
+    |   |               |           
+    |   |               +---entity
+    |   |               |       Gestionmapa.class
+    |   |               |       
+    |   |               +---model
+    |   |               |       FormatImage.class
+    |   |               |       GestionmapaModel.class
+    |   |               |       
+    |   |               +---repository
+    |   |               |       GestionmapaRepository.class
+    |   |               |       
+    |   |               \---service
+    |   |                   |   GestionmapaService.class
+    |   |                   |   
+    |   |                   \---impl
+    |   |                           GestionmapaServiceImpl.class
+    |   |                           
+    |   +---static
+    |   |   \---img
+    |   |           logo.png
+    |   |           
+    |   \---templates
+    |           mapas.html
+    |           mapForm.html
+    |           mapQuery.html
+    |           viewmap.html
+    |           
+    +---dependency
+    |       accessors-smart-2.4.11-sources.jar
+    |       android-json-0.0.20131108.vaadin1-sources.jar
+    |       apiguardian-api-1.1.2-sources.jar
+    |       asm-9.3-sources.jar
+    |       aspectjweaver-1.9.7-sources.jar
+    |       assertj-core-3.22.0-sources.jar
+    |       attoparser-2.0.5.RELEASE-sources.jar
+    |       byte-buddy-1.12.23-sources.jar
+    |       byte-buddy-agent-1.12.23-sources.jar
+    |       checker-qual-3.5.0-sources.jar
+    |       classmate-1.5.1-sources.jar
+    |       error_prone_annotations-2.41.0-sources.jar
+    |       failureaccess-1.0.3-sources.jar
+    |       guava-33.5.0-jre-sources.jar
+    |       hamcrest-2.2-sources.jar
+    |       hibernate-commons-annotations-5.1.2.Final-sources.jar
+    |       hibernate-core-5.6.15.Final-sources.jar
+    |       HikariCP-4.0.3-sources.jar
+    |       istack-commons-runtime-3.0.12-sources.jar
+    |       j2objc-annotations-3.1-sources.jar
+    |       jackson-annotations-2.13.5-sources.jar
+    |       jackson-core-2.13.5-sources.jar
+    |       jackson-databind-2.13.5-sources.jar
+    |       jackson-datatype-jdk8-2.13.5-sources.jar
+    |       jackson-datatype-jsr310-2.13.5-sources.jar
+    |       jackson-module-parameter-names-2.13.5-sources.jar
+    |       jakarta.activation-1.2.2-sources.jar
+    |       jakarta.activation-api-1.2.2-sources.jar
+    |       jakarta.annotation-api-1.3.5-sources.jar
+    |       jakarta.persistence-api-2.2.3-sources.jar
+    |       jakarta.transaction-api-1.3.3-sources.jar
+    |       jakarta.xml.bind-api-2.3.3-sources.jar
+    |       jandex-2.4.2.Final-sources.jar
+    |       jaxb-runtime-2.3.9-sources.jar
+    |       jboss-logging-3.4.3.Final-sources.jar
+    |       json-path-2.7.0-sources.jar
+    |       json-smart-2.4.11-sources.jar
+    |       jsonassert-1.5.1-sources.jar
+    |       jspecify-1.0.0-sources.jar
+    |       jul-to-slf4j-1.7.36-sources.jar
+    |       junit-jupiter-5.8.2-sources.jar
+    |       junit-jupiter-api-5.8.2-sources.jar
+    |       junit-jupiter-engine-5.8.2-sources.jar
+    |       junit-jupiter-params-5.8.2-sources.jar
+    |       junit-platform-commons-1.8.2-sources.jar
+    |       junit-platform-engine-1.8.2-sources.jar
+    |       log4j-api-2.17.2-sources.jar
+    |       log4j-to-slf4j-2.17.2-sources.jar
+    |       logback-classic-1.2.12-sources.jar
+    |       logback-core-1.2.12-sources.jar
+    |       mockito-core-4.5.1-sources.jar
+    |       mockito-junit-jupiter-4.5.1-sources.jar
+    |       objenesis-3.2-sources.jar
+    |       opentest4j-1.2.0-sources.jar
+    |       postgresql-42.3.8-sources.jar
+    |       slf4j-api-1.7.36-sources.jar
+    |       snakeyaml-1.30-sources.jar
+    |       spring-aop-5.3.31-sources.jar
+    |       spring-aspects-5.3.31-sources.jar
+    |       spring-beans-5.3.31-sources.jar
+    |       spring-boot-2.7.18-sources.jar
+    |       spring-boot-autoconfigure-2.7.18-sources.jar
+    |       spring-boot-devtools-2.7.18-sources.jar
+    |       spring-boot-starter-2.7.18-sources.jar
+    |       spring-boot-starter-aop-2.7.18-sources.jar
+    |       spring-boot-starter-data-jpa-2.7.18-sources.jar
+    |       spring-boot-starter-jdbc-2.7.18-sources.jar
+    |       spring-boot-starter-json-2.7.18-sources.jar
+    |       spring-boot-starter-logging-2.7.18-sources.jar
+    |       spring-boot-starter-test-2.7.18-sources.jar
+    |       spring-boot-starter-thymeleaf-2.7.18-sources.jar
+    |       spring-boot-starter-tomcat-2.7.18-sources.jar
+    |       spring-boot-starter-web-2.7.18-sources.jar
+    |       spring-boot-test-2.7.18-sources.jar
+    |       spring-boot-test-autoconfigure-2.7.18-sources.jar
+    |       spring-context-5.3.31-sources.jar
+    |       spring-core-5.3.31-sources.jar
+    |       spring-data-commons-2.7.18-sources.jar
+    |       spring-data-jpa-2.7.18-sources.jar
+    |       spring-expression-5.3.31-sources.jar
+    |       spring-jcl-5.3.31-sources.jar
+    |       spring-jdbc-5.3.31-sources.jar
+    |       spring-orm-5.3.31-sources.jar
+    |       spring-test-5.3.31-sources.jar
+    |       spring-tx-5.3.31-sources.jar
+    |       spring-web-5.3.31-sources.jar
+    |       spring-webmvc-5.3.31-sources.jar
+    |       thymeleaf-3.0.15.RELEASE-sources.jar
+    |       thymeleaf-extras-java8time-3.0.4.RELEASE-sources.jar
+    |       thymeleaf-spring5-3.0.15.RELEASE-sources.jar
+    |       tomcat-embed-core-9.0.83-sources.jar
+    |       tomcat-embed-el-9.0.83-sources.jar
+    |       tomcat-embed-websocket-9.0.83-sources.jar
+    |       txw2-2.3.9-sources.jar
+    |       unbescape-1.1.6.RELEASE-sources.jar
+    |       xmlunit-core-2.9.1-sources.jar
+    |       
+    +---generated-sources
+    |   \---annotations
+    +---generated-test-sources
+    |   \---test-annotations
+    +---m2e-wtp
+    |   \---web-resources
+    |       \---META-INF
+    |           |   MANIFEST.MF
+    |           |   
+    |           \---maven
+    |               \---pe.gob.sencico
+    |                   \---gestion-mapa-aiquipa
+    |                           pom.properties
+    |                           pom.xml
+    |                           
+    \---test-classes
+        \---pe
+            \---gob
+                \---sencico
+                    \---gestion_mapa_aiquipa
+                            GestionMapaAiquipaApplicationTests.class
+                            

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>SigMap</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" th:src="@{https://code.jquery.com/jquery-1.11.0.min.js}"></script>
+	<link rel="stylesheet" th:href="@{http://idesep.senamhi.gob.pe/geoserver/openlayers3/ol.css}" type="text/css">
+	<script th:src="@{http://idesep.senamhi.gob.pe/geoserver/openlayers3/ol.js}" type="text/javascript"></script>
+	<script type="text/javascript"
+		th:src="@{http://idesep.senamhi.gob.pe/geovisoridesep/assets/plugins/openlayer/src/proj4js/proj4.js}"></script>
+
+	<link rel="stylesheet" th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
+		type="text/css" />
+	<link rel="stylesheet"
+		th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css}"
+		type="text/css" />
+
+	<link rel="stylesheet" th:href="@{/css/viewmap.css}" type="text/css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="#"><img alt="#" th:src="@{/img/logo.png}" width="40" height="40"
+				class="d-inline-block align-top">Galer&iacute;a de Mapas</a>
+		<a th:href="@{/galeria/view}"><button type="button" class="btn btn-primary"><i class="fa fa-eye">&nbsp;Lista de
+					mapas de la galer&iacute;a</i></button></a>
+	</nav>
+	<div id="map"></div>
+	<div id="leyenda">
+		<img alt="no disponible" th:src="${mapa.urlLegendGraphic}">
+	</div>
+	<script th:inline="javascript" type="text/javascript">
+
+		var format = /*[[${mapa.format}]]*/null
+		format = format.replace('\/', '/');
+
+		var proyeccion = /*[[${mapa.srs}]]*/null
+
+		var longitudIzquierda = /*[[${mapa.longitudIzquierda}]]*/null
+		var latitudIzquierda = /*[[${mapa.latitudIzquierda}]]*/null
+		var longitudDerecha = /*[[${mapa.longitudDerecha}]]*/null
+		var latitudDerecha = /*[[${mapa.latitudDerecha}]]*/null
+
+		var url = /*[[${mapa.url}]]*/null
+		url = url.replace('\/', '/');
+
+		var layers = /*[[${mapa.layers}]]*/null
+
+		var version = /*[[${mapa.version}]]*/null
+
+		var boundary = [longitudIzquierda, latitudIzquierda, longitudDerecha, latitudDerecha];
+
+		proj4.defs(proyeccion, "+proj=longlat +datum=WGS84 +no_defs");
+
+		var projection = new ol.proj.Projection({
+			code: proyeccion,
+			units: 'degrees',
+			axisOrientation: 'neu'
+		});
+
+		var view = new ol.View({
+			projection: projection,
+			center: [(boundary[0] + boundary[2]) / 2, (boundary[1] + boundary[3]) / 2]
+		});
+
+		var osm = new ol.layer.Tile({ source: new ol.source.OSM() });
+
+		var current_wms = new ol.layer.Tile({
+			source: new ol.source.TileWMS({
+				url: url,
+				params: {
+					LAYERS: layers,
+					'VERSION': version,
+					'FORMAT': format,
+					'TILED': true
+				},
+				serverType: 'geoserver'
+			})
+		});
+
+		var map = new ol.Map({
+			target: 'map',
+			layers: [osm, current_wms],
+			view: view
+		});
+
+		map.addControl(new ol.control.ZoomSlider());
+
+		map.getView().fit(boundary, map.getSize());
+	</script>
+</body>
+
+</html>
